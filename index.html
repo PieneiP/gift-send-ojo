@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html lang = "ja">
+ <head>
+  <meta charset = "utf-8">
+  <title>お嬢にギフトを贈ろう！</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+   #main{
+	text-align: center;
+	background-color: #fff;
+   }
+   #share{
+	background-color: #009D5B; 
+	color: #fff;
+	border-radius:5px;
+	cursor: pointer;
+   }
+   body{
+	background-image: url("clover.jpg");
+   }
+  </style>
+ </head>
+ <body>
+  <div id = "main">
+――――――――――――――――――――――――――――――
+<h2>Bakemon.co.jp</h2>
+<h3>送り主: @秀(提供)#7732　</h3>
+3277回目のギフトをお楽しみください！　秀<br>
+――――――――――――――――――――――――――――――
+   <br>
+   <button type = "button" id = "share">お嬢！</button>
+  </div>
+  <script type = "text/javascript">
+	document.getElementById("share").addEventListener('click', function(){
+  		navigator.share({title:document.title, url:'', text:'Bakemon.co.jp 送り主: @秀(提供)#7732 3277回目のギフトをお楽しみください！　秀'});
+	}, false);
+  </script>
+ </body>
+</html>
